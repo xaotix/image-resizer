@@ -6,16 +6,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Width" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="Height" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="WidthPc" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="HeightPc" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="KeepAspectRatio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

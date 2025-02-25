@@ -72,7 +72,14 @@ namespace ImageResizer
 
         private void button_start_Click(object sender, EventArgs e)
         {
-            ResizeAndSaveImagesAsync();
+            if(textBox_outputFolderPath.Text =="")
+            {
+                System.Windows.Forms.MessageBox.Show("Diretório de destino não pode estar em branco.");
+            }
+            else
+            {
+                ResizeAndSaveImagesAsync();
+            }
         }
     }
 }

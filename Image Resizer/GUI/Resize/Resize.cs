@@ -97,7 +97,7 @@ namespace ImageResizer
         public void ResizeAndSaveImagesAsync()
         {
             Form_Loading.Show(
-                title: "Resizing and saving images...",
+                title: "Redimensionando e salvando...",
                 start: (worker, e) =>
                 {
                     int width = 0;

@@ -8,13 +8,13 @@ namespace ImageResizer
         {
             return new[]
             {
-                new ViewMode("Medium Icons", ViewX.MediumIcon, new Size(64, 64)),
+                new ViewMode("Ícones", ViewX.MediumIcon, new Size(64, 64)),
                 new ViewMode("Details", ViewX.Details, new Size(32, 32)),
-                new ViewMode("Small Icons", ViewX.SmallIcon, new Size(32, 32)),
-                new ViewMode("List", ViewX.List, new Size(32, 32)),
-                new ViewMode("Tile", ViewX.Tile, new Size(32, 32)),
-                new ViewMode("Large Icons", ViewX.LargeIcon, new Size(128, 128)),
-                new ViewMode("Extra Large Icons", ViewX.ExtraLargeIcon, new Size(256, 256))
+                new ViewMode("Ícones Pequenos", ViewX.SmallIcon, new Size(32, 32)),
+                new ViewMode("Lista", ViewX.List, new Size(32, 32)),
+                new ViewMode("Lado a lado", ViewX.Tile, new Size(32, 32)),
+                new ViewMode("Ícones Grandes", ViewX.LargeIcon, new Size(128, 128)),
+                new ViewMode("Íconges Gigantes", ViewX.ExtraLargeIcon, new Size(256, 256))
             };
         }
 

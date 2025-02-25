@@ -13,10 +13,10 @@ namespace ImageResizer
 
         public void SetupControls()
         {
-            listView_main.AddColumn("Name", 200);
-            listView_main.AddColumn("Dimensions", 100);
-            listView_main.AddColumn("Size", 100);
-            listView_main.AddColumn("Format", 100);
+            listView_main.AddColumn("Nome", 200);
+            listView_main.AddColumn("Dimensões", 100);
+            listView_main.AddColumn("Tamanho", 100);
+            listView_main.AddColumn("Formato", 100);
             listView_main.FullRowSelect = true;
             comboBox_view.SetDataSource(API.GetViewModes(), "Title", "ViewX");
         }
@@ -29,7 +29,7 @@ namespace ImageResizer
             button_remove.Enabled = itemsAreSelected;
             button_clear.Enabled = itemsExist;
             button_resize.Enabled = itemsExist;
-            button_imagesCount.Text = String.Format("{0} images", _inputImages.Count);
+            button_imagesCount.Text = String.Format("{0} imagens", _inputImages.Count);
         }
 
         public void LoadSettings()

@@ -4,13 +4,13 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("Image Resizer")]
-[assembly: AssemblyDescription("Batch Image Resizer")]
+[assembly: AssemblyTitle("Medabil Image Resizer")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Ambratolm - Elhafid Softwares")]
-[assembly: AssemblyProduct("Image Resizer")]
-[assembly: AssemblyCopyright("Copyright © Ambratolm - Elhafid Softwares 2021")]
-[assembly: AssemblyTrademark("Ambratolm")]
+[assembly: AssemblyCompany("Medabil")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("DLM.dev.br")]
+[assembly: AssemblyTrademark("Medabil")]
 [assembly: AssemblyCulture("")]
 
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly 

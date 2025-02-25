@@ -39,37 +39,41 @@
             // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(188, 70);
+            this.button_cancel.Location = new System.Drawing.Point(282, 108);
+            this.button_cancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(75, 23);
+            this.button_cancel.Size = new System.Drawing.Size(112, 35);
             this.button_cancel.TabIndex = 0;
-            this.button_cancel.Text = "Cancel";
+            this.button_cancel.Text = "Cancelar";
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // progressBar_main
             // 
-            this.progressBar_main.Location = new System.Drawing.Point(14, 37);
+            this.progressBar_main.Location = new System.Drawing.Point(21, 57);
+            this.progressBar_main.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar_main.Name = "progressBar_main";
-            this.progressBar_main.Size = new System.Drawing.Size(249, 23);
+            this.progressBar_main.Size = new System.Drawing.Size(374, 35);
             this.progressBar_main.TabIndex = 1;
             // 
             // label_progressPercentage
             // 
-            this.label_progressPercentage.Location = new System.Drawing.Point(227, 11);
+            this.label_progressPercentage.Location = new System.Drawing.Point(340, 17);
+            this.label_progressPercentage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_progressPercentage.Name = "label_progressPercentage";
-            this.label_progressPercentage.Size = new System.Drawing.Size(36, 23);
+            this.label_progressPercentage.Size = new System.Drawing.Size(54, 35);
             this.label_progressPercentage.TabIndex = 2;
             this.label_progressPercentage.Text = "0%";
             this.label_progressPercentage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_title
             // 
-            this.label_title.Location = new System.Drawing.Point(11, 11);
+            this.label_title.Location = new System.Drawing.Point(16, 17);
+            this.label_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(199, 23);
+            this.label_title.Size = new System.Drawing.Size(298, 35);
             this.label_title.TabIndex = 3;
-            this.label_title.Text = "Loading...";
+            this.label_title.Text = "Carregando...";
             this.label_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
@@ -80,8 +84,9 @@
             this.panel1.Controls.Add(this.button_cancel);
             this.panel1.Controls.Add(this.label_progressPercentage);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 107);
+            this.panel1.Size = new System.Drawing.Size(413, 164);
             this.panel1.TabIndex = 4;
             // 
             // backgroundWorker_main
@@ -94,11 +99,12 @@
             // 
             // Form_Loading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 107);
+            this.ClientSize = new System.Drawing.Size(414, 165);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Loading";
