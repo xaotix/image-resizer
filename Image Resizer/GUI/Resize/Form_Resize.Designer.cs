@@ -72,7 +72,6 @@
             this.checkBox_keepAspectRatio.Size = new System.Drawing.Size(161, 24);
             this.checkBox_keepAspectRatio.TabIndex = 2;
             this.checkBox_keepAspectRatio.Text = "Manter proporção";
-            this.toolTip_main.SetToolTip(this.checkBox_keepAspectRatio, "Keep the same width-height proportions");
             this.checkBox_keepAspectRatio.UseVisualStyleBackColor = true;
             this.checkBox_keepAspectRatio.CheckedChanged += new System.EventHandler(this.checkBox_keepAspectRatio_CheckedChanged);
             // 
@@ -136,20 +135,15 @@
             // 
             // numUD_heightPc
             // 
-            this.numUD_heightPc.Location = new System.Drawing.Point(100, 77);
+            this.numUD_heightPc.Location = new System.Drawing.Point(131, 77);
             this.numUD_heightPc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numUD_heightPc.Maximum = new decimal(new int[] {
             400,
             0,
             0,
             0});
-            this.numUD_heightPc.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.numUD_heightPc.Name = "numUD_heightPc";
-            this.numUD_heightPc.Size = new System.Drawing.Size(180, 26);
+            this.numUD_heightPc.Size = new System.Drawing.Size(149, 26);
             this.numUD_heightPc.TabIndex = 3;
             this.numUD_heightPc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numUD_heightPc.Value = new decimal(new int[] {
@@ -161,20 +155,15 @@
             // 
             // numUD_widthPc
             // 
-            this.numUD_widthPc.Location = new System.Drawing.Point(96, 29);
+            this.numUD_widthPc.Location = new System.Drawing.Point(131, 29);
             this.numUD_widthPc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numUD_widthPc.Maximum = new decimal(new int[] {
             400,
             0,
             0,
             0});
-            this.numUD_widthPc.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.numUD_widthPc.Name = "numUD_widthPc";
-            this.numUD_widthPc.Size = new System.Drawing.Size(180, 26);
+            this.numUD_widthPc.Size = new System.Drawing.Size(145, 26);
             this.numUD_widthPc.TabIndex = 1;
             this.numUD_widthPc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numUD_widthPc.Value = new decimal(new int[] {
@@ -243,20 +232,15 @@
             // 
             // numUD_height
             // 
-            this.numUD_height.Location = new System.Drawing.Point(84, 77);
+            this.numUD_height.Location = new System.Drawing.Point(121, 77);
             this.numUD_height.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numUD_height.Maximum = new decimal(new int[] {
             20000,
             0,
             0,
             0});
-            this.numUD_height.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.numUD_height.Name = "numUD_height";
-            this.numUD_height.Size = new System.Drawing.Size(180, 26);
+            this.numUD_height.Size = new System.Drawing.Size(143, 26);
             this.numUD_height.TabIndex = 3;
             this.numUD_height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numUD_height.Value = new decimal(new int[] {
@@ -268,20 +252,15 @@
             // 
             // numUD_width
             // 
-            this.numUD_width.Location = new System.Drawing.Point(84, 29);
+            this.numUD_width.Location = new System.Drawing.Point(121, 29);
             this.numUD_width.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numUD_width.Maximum = new decimal(new int[] {
             20000,
             0,
             0,
             0});
-            this.numUD_width.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.numUD_width.Name = "numUD_width";
-            this.numUD_width.Size = new System.Drawing.Size(180, 26);
+            this.numUD_width.Size = new System.Drawing.Size(143, 26);
             this.numUD_width.TabIndex = 1;
             this.numUD_width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numUD_width.Value = new decimal(new int[] {
@@ -299,7 +278,6 @@
             this.textBox_outputFolderPath.ReadOnly = true;
             this.textBox_outputFolderPath.Size = new System.Drawing.Size(530, 26);
             this.textBox_outputFolderPath.TabIndex = 4;
-            this.toolTip_main.SetToolTip(this.textBox_outputFolderPath, "Path of the output folder");
             this.textBox_outputFolderPath.TextChanged += new System.EventHandler(this.textBox_outputFolderPath_TextChanged);
             // 
             // label_outputFolder
@@ -323,7 +301,6 @@
             this.radioButton_flat.TabIndex = 7;
             this.radioButton_flat.Text = "Pixels";
             this.radioButton_flat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip_main.SetToolTip(this.radioButton_flat, "Resize images by giving fixed values for width and height");
             this.radioButton_flat.UseVisualStyleBackColor = true;
             this.radioButton_flat.CheckedChanged += new System.EventHandler(this.radioButton_flat_CheckedChanged);
             // 
@@ -338,8 +315,6 @@
             this.radioButton_percentage.TabIndex = 7;
             this.radioButton_percentage.TabStop = true;
             this.radioButton_percentage.Text = "Porcentagem";
-            this.toolTip_main.SetToolTip(this.radioButton_percentage, "Resize images by giving percentage values relative to the original width and heig" +
-        "ht\r\n");
             this.radioButton_percentage.UseVisualStyleBackColor = true;
             this.radioButton_percentage.CheckedChanged += new System.EventHandler(this.radioButton_percentage_CheckedChanged);
             // 
@@ -353,7 +328,7 @@
             this.button_start.Size = new System.Drawing.Size(150, 35);
             this.button_start.TabIndex = 6;
             this.button_start.Text = "Iniciar";
-            this.toolTip_main.SetToolTip(this.button_start, "Start resizing images and saving them to the output folder");
+            this.toolTip_main.SetToolTip(this.button_start, "Iniciar!");
             this.button_start.UseVisualStyleBackColor = true;
             this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
@@ -368,7 +343,7 @@
             this.button_cancel.Size = new System.Drawing.Size(150, 35);
             this.button_cancel.TabIndex = 8;
             this.button_cancel.Text = "Cancelar";
-            this.toolTip_main.SetToolTip(this.button_cancel, "Close this window");
+            this.toolTip_main.SetToolTip(this.button_cancel, "Cancelar");
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
@@ -382,7 +357,7 @@
             this.button_selectOutputFolder.Size = new System.Drawing.Size(150, 35);
             this.button_selectOutputFolder.TabIndex = 5;
             this.button_selectOutputFolder.Text = "Selecionar...";
-            this.toolTip_main.SetToolTip(this.button_selectOutputFolder, "Select the folder where to save the resulting images");
+            this.toolTip_main.SetToolTip(this.button_selectOutputFolder, "Selecione a pasta de destino");
             this.button_selectOutputFolder.UseVisualStyleBackColor = true;
             this.button_selectOutputFolder.Click += new System.EventHandler(this.button_selectOutputFolder_Click);
             // 

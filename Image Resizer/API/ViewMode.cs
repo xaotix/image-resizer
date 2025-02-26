@@ -14,7 +14,7 @@ namespace ImageResizer
                 new ViewMode("Lista", ViewX.List, new Size(32, 32)),
                 new ViewMode("Lado a lado", ViewX.Tile, new Size(32, 32)),
                 new ViewMode("Ícones Grandes", ViewX.LargeIcon, new Size(128, 128)),
-                new ViewMode("Íconges Gigantes", ViewX.ExtraLargeIcon, new Size(256, 256))
+                new ViewMode("Ícones Gigantes", ViewX.ExtraLargeIcon, new Size(256, 256))
             };
         }
 

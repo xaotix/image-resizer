@@ -28,7 +28,7 @@
     <SupportUrl>https://www.medabil.com.br</SupportUrl>
     <SuiteName>Image Resize</SuiteName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -57,7 +57,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>Logo-Medabil-Vertical-01.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>BB8730764A8975C597323587AE8C162631563FAA</ManifestCertificateThumbprint>
@@ -204,6 +204,7 @@
     <None Include="Resources\background.jpg" />
     <None Include="Resources\image.png" />
     <None Include="Resources\ThirdPartyLicenses.txt" />
+    <Content Include="Logo-Medabil-Vertical-01.ico" />
     <Content Include="Todo.txt" />
     <None Include="Resources\cross.png" />
     <None Include="Resources\folder.png" />

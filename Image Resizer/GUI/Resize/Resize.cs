@@ -37,12 +37,12 @@ namespace ImageResizer
                     senderControl.Equals(checkBox_keepAspectRatio)) &&
                     numUD_width.Value != 0)
                 {
-                    numUD_height.Value = 0;
+                    numUD_height.Value = numUD_width.Value;
                 }
                 if (senderControl.Equals(numUD_height) &&
                     numUD_height.Value != 0)
                 {
-                    numUD_width.Value = 0;
+                    numUD_width.Value = numUD_height.Value;
                 }
 
                 if ((senderControl.Equals(numUD_widthPc) ||

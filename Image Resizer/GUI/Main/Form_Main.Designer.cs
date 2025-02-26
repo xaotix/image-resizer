@@ -53,7 +53,6 @@
             this.comboBox_view.Name = "comboBox_view";
             this.comboBox_view.Size = new System.Drawing.Size(148, 28);
             this.comboBox_view.TabIndex = 8;
-            this.toolTip_main.SetToolTip(this.comboBox_view, "Change the view of the list");
             this.comboBox_view.SelectedIndexChanged += new System.EventHandler(this.comboBox_view_SelectedIndexChanged);
             // 
             // listView_main
@@ -92,6 +91,7 @@
             this.button_resize.Size = new System.Drawing.Size(149, 35);
             this.button_resize.TabIndex = 13;
             this.button_resize.Text = "Redimensionar";
+            this.button_resize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip_main.SetToolTip(this.button_resize, "Resize all images in the list");
             this.button_resize.UseVisualStyleBackColor = true;
             this.button_resize.Click += new System.EventHandler(this.button_resize_Click);
@@ -101,12 +101,13 @@
             this.button_clear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_clear.Image = global::ImageResizer.Properties.Resources.cross;
             this.button_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_clear.Location = new System.Drawing.Point(336, 20);
+            this.button_clear.Location = new System.Drawing.Point(276, 20);
             this.button_clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(150, 35);
+            this.button_clear.Size = new System.Drawing.Size(103, 35);
             this.button_clear.TabIndex = 14;
             this.button_clear.Text = "Limpar";
+            this.button_clear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip_main.SetToolTip(this.button_clear, "Remove all images from the list");
             this.button_clear.UseVisualStyleBackColor = true;
             this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
@@ -116,13 +117,14 @@
             this.button_view.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_view.Image = global::ImageResizer.Properties.Resources.eye;
             this.button_view.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_view.Location = new System.Drawing.Point(631, 20);
+            this.button_view.Location = new System.Drawing.Point(645, 20);
             this.button_view.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_view.Name = "button_view";
-            this.button_view.Size = new System.Drawing.Size(120, 35);
+            this.button_view.Size = new System.Drawing.Size(106, 35);
             this.button_view.TabIndex = 16;
             this.button_view.Text = "Visualizar";
-            this.toolTip_main.SetToolTip(this.button_view, "View selected image");
+            this.button_view.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip_main.SetToolTip(this.button_view, "Abrir imagem");
             this.button_view.UseVisualStyleBackColor = true;
             this.button_view.Click += new System.EventHandler(this.button_view_Click);
             // 
@@ -130,12 +132,13 @@
             // 
             this.button_remove.Image = global::ImageResizer.Properties.Resources.delete;
             this.button_remove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_remove.Location = new System.Drawing.Point(177, 20);
+            this.button_remove.Location = new System.Drawing.Point(155, 20);
             this.button_remove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_remove.Name = "button_remove";
-            this.button_remove.Size = new System.Drawing.Size(150, 35);
+            this.button_remove.Size = new System.Drawing.Size(113, 35);
             this.button_remove.TabIndex = 15;
             this.button_remove.Text = "Remover";
+            this.button_remove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip_main.SetToolTip(this.button_remove, "Remove selected images from the list");
             this.button_remove.UseVisualStyleBackColor = true;
             this.button_remove.Click += new System.EventHandler(this.button_remove_Click);
@@ -148,9 +151,10 @@
             this.button_add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_add.Name = "button_add";
             this.button_add.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_add.Size = new System.Drawing.Size(150, 35);
+            this.button_add.Size = new System.Drawing.Size(129, 35);
             this.button_add.TabIndex = 7;
             this.button_add.Text = "Adicionar";
+            this.button_add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip_main.SetToolTip(this.button_add, "Adicionar imagens");
             this.button_add.UseVisualStyleBackColor = true;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);

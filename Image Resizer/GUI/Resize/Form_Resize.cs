@@ -76,6 +76,22 @@ namespace ImageResizer
             {
                 System.Windows.Forms.MessageBox.Show("Diretório de destino não pode estar em branco.");
             }
+            else if(radioButton_percentage.Checked && numUD_widthPc.Value<1)
+            {
+                System.Windows.Forms.MessageBox.Show("Porcentagem de largura não pode ser inferior a 1%.");
+            }
+            else if (radioButton_percentage.Checked && numUD_heightPc.Value < 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Porcentagem de altura não pode ser inferior a 1%.");
+            }
+            else if (radioButton_percentage.Checked && numUD_width.Value < 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Largura não pode ser inferior a 1.");
+            }
+            else if (radioButton_percentage.Checked && numUD_height.Value < 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Altura não pode ser inferior a 1.");
+            }
             else
             {
                 ResizeAndSaveImagesAsync();
