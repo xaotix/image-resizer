@@ -53,12 +53,18 @@
             this.button_selectOutputFolder = new System.Windows.Forms.Button();
             this.toolTip_main = new System.Windows.Forms.ToolTip(this.components);
             this.folderBrowserDialog_main = new System.Windows.Forms.FolderBrowserDialog();
+            this.groupBox_qualidade = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.num_Qualidade = new System.Windows.Forms.NumericUpDown();
+            this.radioButton_qualidade = new System.Windows.Forms.RadioButton();
             this.groupBox_percentage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_heightPc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_widthPc)).BeginInit();
             this.groupBox_flat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_width)).BeginInit();
+            this.groupBox_qualidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Qualidade)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox_keepAspectRatio
@@ -276,7 +282,7 @@
             this.textBox_outputFolderPath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_outputFolderPath.Name = "textBox_outputFolderPath";
             this.textBox_outputFolderPath.ReadOnly = true;
-            this.textBox_outputFolderPath.Size = new System.Drawing.Size(530, 26);
+            this.textBox_outputFolderPath.Size = new System.Drawing.Size(723, 26);
             this.textBox_outputFolderPath.TabIndex = 4;
             this.textBox_outputFolderPath.TextChanged += new System.EventHandler(this.textBox_outputFolderPath_TextChanged);
             // 
@@ -307,13 +313,11 @@
             // radioButton_percentage
             // 
             this.radioButton_percentage.AutoSize = true;
-            this.radioButton_percentage.Checked = true;
             this.radioButton_percentage.Location = new System.Drawing.Point(372, 18);
             this.radioButton_percentage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton_percentage.Name = "radioButton_percentage";
             this.radioButton_percentage.Size = new System.Drawing.Size(129, 24);
             this.radioButton_percentage.TabIndex = 7;
-            this.radioButton_percentage.TabStop = true;
             this.radioButton_percentage.Text = "Porcentagem";
             this.radioButton_percentage.UseVisualStyleBackColor = true;
             this.radioButton_percentage.CheckedChanged += new System.EventHandler(this.radioButton_percentage_CheckedChanged);
@@ -322,7 +326,7 @@
             // 
             this.button_start.Image = global::ImageResizer.Properties.Resources.accept_button;
             this.button_start.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_start.Location = new System.Drawing.Point(561, 362);
+            this.button_start.Location = new System.Drawing.Point(754, 357);
             this.button_start.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(150, 35);
@@ -337,7 +341,7 @@
             this.button_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_cancel.Image = global::ImageResizer.Properties.Resources.cancel;
             this.button_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_cancel.Location = new System.Drawing.Point(402, 362);
+            this.button_cancel.Location = new System.Drawing.Point(595, 357);
             this.button_cancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(150, 35);
@@ -351,7 +355,7 @@
             // 
             this.button_selectOutputFolder.Image = global::ImageResizer.Properties.Resources.folder;
             this.button_selectOutputFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_selectOutputFolder.Location = new System.Drawing.Point(561, 292);
+            this.button_selectOutputFolder.Location = new System.Drawing.Point(753, 294);
             this.button_selectOutputFolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_selectOutputFolder.Name = "button_selectOutputFolder";
             this.button_selectOutputFolder.Size = new System.Drawing.Size(150, 35);
@@ -361,13 +365,67 @@
             this.button_selectOutputFolder.UseVisualStyleBackColor = true;
             this.button_selectOutputFolder.Click += new System.EventHandler(this.button_selectOutputFolder_Click);
             // 
+            // groupBox_qualidade
+            // 
+            this.groupBox_qualidade.Controls.Add(this.label2);
+            this.groupBox_qualidade.Controls.Add(this.num_Qualidade);
+            this.groupBox_qualidade.Enabled = false;
+            this.groupBox_qualidade.Location = new System.Drawing.Point(719, 68);
+            this.groupBox_qualidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox_qualidade.Name = "groupBox_qualidade";
+            this.groupBox_qualidade.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox_qualidade.Size = new System.Drawing.Size(201, 137);
+            this.groupBox_qualidade.TabIndex = 18;
+            this.groupBox_qualidade.TabStop = false;
+            this.groupBox_qualidade.Text = "Qualidade";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(162, 61);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "%";
+            // 
+            // num_Qualidade
+            // 
+            this.num_Qualidade.Location = new System.Drawing.Point(8, 55);
+            this.num_Qualidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.num_Qualidade.Name = "num_Qualidade";
+            this.num_Qualidade.Size = new System.Drawing.Size(145, 26);
+            this.num_Qualidade.TabIndex = 1;
+            this.num_Qualidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.num_Qualidade.Value = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            // 
+            // radioButton_qualidade
+            // 
+            this.radioButton_qualidade.AutoSize = true;
+            this.radioButton_qualidade.Checked = true;
+            this.radioButton_qualidade.Location = new System.Drawing.Point(719, 14);
+            this.radioButton_qualidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButton_qualidade.Name = "radioButton_qualidade";
+            this.radioButton_qualidade.Size = new System.Drawing.Size(106, 24);
+            this.radioButton_qualidade.TabIndex = 19;
+            this.radioButton_qualidade.TabStop = true;
+            this.radioButton_qualidade.Text = "Qualidade";
+            this.radioButton_qualidade.UseVisualStyleBackColor = true;
+            this.radioButton_qualidade.CheckedChanged += new System.EventHandler(this.rd_qualidade_CheckedChanged);
+            // 
             // Form_Resize
             // 
             this.AcceptButton = this.button_start;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_cancel;
-            this.ClientSize = new System.Drawing.Size(734, 417);
+            this.ClientSize = new System.Drawing.Size(940, 436);
+            this.Controls.Add(this.radioButton_qualidade);
+            this.Controls.Add(this.groupBox_qualidade);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.radioButton_percentage);
             this.Controls.Add(this.radioButton_flat);
@@ -386,7 +444,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Resize Images";
+            this.Text = "Redimensionar Imagens";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Resize_FormClosing);
             this.groupBox_percentage.ResumeLayout(false);
             this.groupBox_percentage.PerformLayout();
@@ -396,6 +454,9 @@
             this.groupBox_flat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_height)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_width)).EndInit();
+            this.groupBox_qualidade.ResumeLayout(false);
+            this.groupBox_qualidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Qualidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,5 +488,9 @@
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.ToolTip toolTip_main;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog_main;
+        private System.Windows.Forms.GroupBox groupBox_qualidade;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown num_Qualidade;
+        private System.Windows.Forms.RadioButton radioButton_qualidade;
     }
 }

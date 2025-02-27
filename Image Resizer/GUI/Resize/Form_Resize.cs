@@ -92,10 +92,19 @@ namespace ImageResizer
             {
                 System.Windows.Forms.MessageBox.Show("Altura não pode ser inferior a 1.");
             }
+            else if (radioButton_qualidade.Checked && num_Qualidade.Value < 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Qualidade não pode ser inferior a 1.");
+            }
             else
             {
                 ResizeAndSaveImagesAsync();
             }
+        }
+
+        private void rd_qualidade_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateControls();
         }
     }
 }

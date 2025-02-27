@@ -11,7 +11,7 @@ namespace ImageResizer
 {
     public static partial class API
     {
-        public enum ResizeUnit { Flat, Percentage }
+        public enum ResizeUnit { Flat, Percentage, Qualidade }
 
         public static string GetFilePath(this Image image)
         {
@@ -33,6 +33,17 @@ namespace ImageResizer
             imageFactory.Load(image);
             ResizeLayer config = new ResizeLayer(size, resizeMode);
             Image resizedImage = imageFactory.Resize(config).Image;
+          
+            resizedImage.SetFilePath(image.GetFilePath());
+            return resizedImage;
+        }
+        public static Image Qualidade(this Image image, int qualidade)
+        {
+            ImageFactory imageFactory = new ImageFactory();
+            imageFactory.Load(image);
+            //ResizeLayer config = new ResizeLayer(size, resizeMode);
+            Image resizedImage = imageFactory.Quality(qualidade).Image;
+
             resizedImage.SetFilePath(image.GetFilePath());
             return resizedImage;
         }
@@ -46,6 +57,8 @@ namespace ImageResizer
                     return image.Resize(new Size(
                         width.ToFlat(image.Width),
                         height.ToFlat(image.Height)));
+                case ResizeUnit.Qualidade:
+                    return image.Qualidade(width);
                 default:
                     return image.Resize(new Size(width, height));
             }

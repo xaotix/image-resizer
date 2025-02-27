@@ -27,6 +27,7 @@ namespace ImageResizer
         {
             groupBox_flat.Enabled = radioButton_flat.Checked;
             groupBox_percentage.Enabled = radioButton_percentage.Checked;
+            groupBox_qualidade.Enabled = radioButton_qualidade.Checked;
             button_start.Enabled = Directory.Exists(textBox_outputFolderPath.Text);
         }
         public void UpdateControls(Control senderControl)
@@ -111,6 +112,11 @@ namespace ImageResizer
                         height = (int)numUD_height.Value;
                         unit = API.ResizeUnit.Flat;
                     }
+                    else if(radioButton_qualidade.Checked)
+                    {
+                        width = (int)num_Qualidade.Value;
+                        unit = API.ResizeUnit.Qualidade;
+                    }
                     else
                     {
                         width = (int)numUD_widthPc.Value;
@@ -138,8 +144,8 @@ namespace ImageResizer
                             if (File.Exists(fullPath) && !overwriteAll)
                             {
                                 var dialogResult = Form_Overwrite.Show(
-                                    String.Format("This file already exists:\n{0}\n\nOverwrite it ?", fullPath),
-                                    "File Already Exists");
+                                    String.Format("Arquivo já existe:\n{0}\n\nSubstituir ?", fullPath),
+                                    "Arquivo já existe");
                                 if (dialogResult == DialogResult.Yes)
                                 {
                                     save();
